@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thabu.Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        function openPdf(){
+            window.open("pdf.html", "_blank");
+        }
+    </script>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <a href="#">Thabsheer</a>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home">
+    <div class="home-left">
+        <p class="welcome">Hi, Iam</p>
+        <h1>Thabsheer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita autem, consequuntur laudantium maxime voluptatum dolore beatae repellat doloribus minima repellendus ex blanditiis, maiores et dolores soluta sit voluptatibus dolor.</p>
+        <a href="index.html" class="btn" onclick="openPdf()">My Resume</a>
+    </div>
+    <div class="home-right">
+        <img src="images/undraw_developer-activity_4zqd.svg" alt="">
+    </div>
+    </section>
+
+    <section class="about" id="about">
+    <div class="left-about">
+        <img src="images/Thabu.Dev.png" alt="">
+    </div>
+    <div class="right-about">
+        <p class="about-us">ABOUT ME</p>
+        <h1>Thabsheer</h1>
+        <p class="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est neque explicabo quam ullam ea beatae ab atque dolorem porro velit delectus repellat nam temporibus maiores laborum, optio voluptatibus. Consequuntur, recusandae.</p>
+        <a href="#projects" class="btn-about">Projects</a>
+    </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+    <div class="grid">
+        <div class="project">
+    <a href="https://majliscomplex.vercel.app/"><img src="images/complex.png" alt=""></a>
+    <a href="https://majliscomplex.vercel.app/"><h3>Majlis Educational Complex Website</h3></a>
+    <p class="desc-proj">A responsive and modern website built for my educational institute, showcasing its institutions, campus facilities, governing body, and contact section. Designed with a clean UI and an interactive user experience.</p>
+    <a href="https://github.com/thabsheerporuthiyil/Majlis-Educational-Complex-Website" class="btn-learn">Learn more</a>
+        </div>
+
+    <div class="project">
+        <a href="https://thabsheer-spotify.netlify.app/"><img src="images/spotify.png" alt=""></a>
+        <a href="https://thabsheer-spotify.netlify.app/"><h3>Spotify Landing Website</h3></a>
+        <p class="desc-proj">A Spotify-themed music player web app that mimics the core design and functionality of Spotify. Built with modern web technologies, it allows users to browse and play music with a sleek, intuitive interface.</p>
+        <a href="https://github.com/thabsheerporuthiyil/Spotify-website" class="btn-learn">Learn more</a>
+    </div>
+    <div class="project">
+        <a href="#"><img src="images/portfolio.png" alt=""></a>
+        <a href="#"><h3>Portfolio Website</h3></a>
+        <p class="desc-proj">This is my personal portfolio, where I showcase my skills, projects, and creative work. It reflects my journey, interests, and the areas I’m passionate about, offering a glimpse into what I do and how I approach my craft.</p>
+        <a href="#" class="btn-learn">Learn more</a>
+    </div>
+    </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="grid-ctct">
+            <h2>CONTACT ME</h2>
+            <form action="https://formspree.io/f/mgvybnga" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="mail" placeholder="Enter your email" />
+
+                <label for="mobile">Mobile Number</label>
+                <input type="number" id="mobile" name="number" placeholder="Enter your mobile number" />
+
+                <label for="email">Message</label>
+                <textarea name="message" placeholder="Leave your message here" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+<footer class="footer">
+  <p class="footer__title">Thabsheer Poruthiyil</p>
+
+  <div class="footer__social">
+    <a href="https://github.com/thabsheerporuthiyil" class="footer__icon"><i class='bx bxl-github'></i></a>
+    <a href="https://instagram.com/thabsheeeeer" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+    <a href="https://www.linkedin.com/in/muhammed-thabsheer-p-8255b0283/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+  </div>
+</footer>
+
+<!-- Boxicons CDN (keep this in your <head>) -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</body>
+</html>
