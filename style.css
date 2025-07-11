@@ -61,6 +61,12 @@ nav ul li a.active::after {
     font-weight: 700;
     font-size: 22px;
 }
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #0113fe;
+}
 .home{
     display: flex;
     flex-direction: row;
@@ -257,7 +263,7 @@ html {
 }
 .grid-ctct h2 {
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 24px;
   color: #222;
 }
 form{
@@ -308,3 +314,77 @@ footer{
 .footer__icon:hover{
     color: #00bcd4;
 }
+/* Tablet size */
+@media (max-width: 992px) {
+  .home, .about {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding-top: 120px;
+  }
+
+  .home-left, .home-right,
+  .left-about, .right-about {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .home-left {
+    align-items: center;
+  }
+
+  .right-about .descr {
+    min-width: unset;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .grid-ctct {
+    width: 90%;
+  }
+}
+
+/* Mobile size */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    color: #0113fe;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
